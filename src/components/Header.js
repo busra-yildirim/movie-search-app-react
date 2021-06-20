@@ -23,6 +23,15 @@ const Header = () => {
                   </li>
                 );
               }
+              else if(route.title==="Favorite"){
+                return (
+                  <li key={route.title}>
+                    <Link to={route.path} className='link'>
+                      {route.title}
+                    </Link>
+                  </li>
+                );
+              }
             })}
           </div>
         </div>
